@@ -1,0 +1,42 @@
+head, body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label{
+    color: white;  
+}
+
+#upload{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+
+}
+#fileInput{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#plateau{
+    position: absolute;
+    top: 90%; /* Changer la valeur pour ajuster la position verticale */
+    left: 35%; /* Changer la valeur pour ajuster la position horizontale */
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 100;
+    visibility: visible;
+    pointer-events: none;
+}
