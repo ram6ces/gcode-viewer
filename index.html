@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ThreeJs Project</title>
+    <title>G-Code Viewer</title>
 
     <!-- Import the css file -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- You can change 0.160.0 to any other availble Three.js version to match your requirements -->
+    <!-- You can change 0.160.0 to any other available Three.js version to match your requirements -->
     <script type="importmap">
         {
             "imports": {
@@ -17,30 +18,31 @@
             }
         }
     </script>
+
+    <!-- Add link to favicon.ico -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <!-- This canvas is the one you will use to display your Three.js code. -->
-    <canvas id="canvas">
-        
-    </canvas>
-    
-    <div>
-        <label for="profile_pic">Choose  a file to upload</label>
-        <input
-        type="file"
-        id="fileInput"
-        name="profile_pic"
-        accept=".gcode" />
-    </div>
+    <canvas id="canvas"></canvas>
 
+    <div>
+        <label for="profile_pic">Choose a file to upload</label>
+        <input
+            type="file"
+            id="fileInput"
+            name="profile_pic"
+            accept=".gcode" />
+    </div>
+    
     <div id="plateau">
         G-code Viewer
     </div>
-    
-      
-        
 
     <!-- The import should happen after creating the other HTML elements since you will be importing them -->
     <script type="module" src="./script.js"></script>
 </body>
+
 </html>
