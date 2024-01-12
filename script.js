@@ -72,7 +72,7 @@ plate.position.set(0, -20, 5); // Adjust position to be beneath the loaded objec
 scene.add(plate);
 
 
-loader.load("/gcode/benchy.gcode", (mesh) => {
+loader.load("./gcode/benchy.gcode", (mesh) => {
     console.log(mesh);
     mesh.position.set( - 100, - 20, 100 );
     scene.add( mesh );
@@ -116,15 +116,6 @@ function handleFileChange(event){
     gCodeMesh = object;
     
 
-    // document.addEventListener('keydown', onKeyDown, false);
-    // document.addEventListener('keyup', onKeyUp, false);
-
-    // document.addEventListener('keydown', (event) => {
-    //     if (event.code === "Space") {
-    //         spacePressed = true;
-    //     }
-    // }
-    // );
 
 }
 
@@ -145,9 +136,3 @@ function render() {
     composer.render();
 
 }
-// function animate() {
-//     requestAnimationFrame(animate);
-//     composer.render();
-// }
-
-// animate();
